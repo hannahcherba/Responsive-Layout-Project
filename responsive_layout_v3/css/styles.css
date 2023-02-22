@@ -1,0 +1,305 @@
+/* Global Layout Set-up 
+---------------------------------*/
+* { 
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0vh auto;
+    padding: 0%;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(88, 71, 71);
+    background:white;
+  }
+  
+  /* Link Styles 
+  ---------------------------------*/
+  .nav a, .sm-nav a, .bottom-nav a, .bottom-nav li.name {
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+  }
+  .link {
+    color:rgb(178, 112, 112);
+    text-decoration: none;
+  }
+
+/* Section Style
+----------------------------------- */
+
+header{
+  margin: 0;
+  padding-top: 3.75em;
+  padding-bottom: 2rem;
+  background: whitesmoke;
+}
+h1.lg-screen {
+  display: none;
+}
+ul.nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+.nav{
+  background-color: whitesmoke;
+  margin-bottom: 0;
+  padding: 5px;
+  list-style-type: none;
+}
+.nav li {
+  background-color:  rgb(210, 165, 165);
+  margin: 5px 1em;
+  padding: 10px 0px;
+  border-radius: 15px;
+}
+.nav li:first-child {
+  background-color: whitesmoke;
+  margin-top: 0px;
+}
+img.profile {
+  width: 65%;
+  margin: 0px 20px 5px;
+}
+p.intro {
+  padding: 20px 15px 5px;
+  margin: 2px;
+  font-size: 20px;
+}
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+}
+main {
+  background: #fff;
+}
+aside{
+  padding: 2.5rem;
+}
+div.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  margin: 0px;
+  padding-bottom: 30px;
+  text-align: center;
+  background: #fff;
+  border-radius: 6px;
+  transition: all .5s;
+  flex-grow: 1;
+}
+article p, article h3, section h3, section p{
+  margin: 1.5rem 5vh;
+}
+article p, section p {
+  font-size: 19px;
+}
+
+article img {
+  max-width: 100%;
+}
+section.skills {
+  padding-bottom: 4rem;
+  margin-bottom: 0px;
+  background-color: rgb(219, 236, 244);
+}
+
+section.contact {
+  background: whitesmoke;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin-top: 0px;
+}
+section h3 {
+  padding: 3rem 0px 1rem;
+}
+hr {
+  background: whitesmoke;
+  margin: 0;
+}
+footer.bottom-nav-lg {
+  display: none;
+}
+footer.bottom-nav-sm {
+  background:whitesmoke;
+  padding: 10px 7px;
+  margin: 0px;
+}
+ul.sm-nav {
+  background: whitesmoke;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+ul.sm-nav li {
+  list-style-type: none;
+  background-color: #fff;
+  margin: 5px 1em;
+  padding: 20px;
+  border-radius: 15px;
+  background-color:  rgb(210, 165, 165);
+  color: white;
+}
+ul.sm-nav li:first-child {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+/* For larger screens 768px-1023px
+-------------------------------- */
+
+@media screen and (min-width: 768px) {
+    h1.lg-screen {
+      display:contents;
+      font-size: 25px;
+    }
+    nav.main-nav {
+      background: whitesmoke;
+      padding-top: 55px;
+    }
+    ul.nav {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 15px;
+    }
+    .nav li {
+      padding: 10px;
+
+    }
+    .nav li.name {
+      display: none;
+    }
+    header {
+      padding-bottom: 6.5rem;
+    }
+    img.profile {
+      float: right;
+      max-width: 40%
+    }
+    p.intro {
+      text-align: left;
+      padding-left: 1em;
+      font-size: 26px;
+      padding-top: 0px;
+    }
+    .card {
+      max-width: 50%;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    section.skills p {
+      margin: 0px 80px 0px; 
+    }
+    section.contact p {
+      margin: 10px 90px; 
+    }
+    footer.bottom-nav-sm{
+      display: none;
+    }
+    footer.bottom-nav-lg {
+      display: contents;
+    }
+    ul.bottom-nav {
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+      background-color: whitesmoke;
+      margin: 0px;
+      padding: 10px;
+    }
+    .bottom-nav li.name {
+      margin-right: auto;
+
+    }
+    .bottom-nav li {
+      padding: 10px;
+      margin: 5px;
+      border-radius: 15px;
+      background-color:  rgb(210, 165, 165);
+    }
+
+}
+@media screen and (min-width: 1000px) {
+  h1.lg-screen {
+    display: none;
+  }
+    ul.nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul.nav li.name{
+    display: contents;
+  }
+  .nav li {
+    height: 45px;
+  }
+  .name h1 {
+    margin-right: auto;
+    padding-left: 70px;
+    font-size: 30px;
+  }
+
+  header {
+    padding-bottom: 10%;
+  }
+  p.intro {
+    width: 50%;
+    padding-left: 70px;
+  }
+  img.profile {
+    /* max-width: 30%; */
+    padding-right: 60px;
+  }
+  aside {
+    background: white;
+  }
+  main {
+    background: whitesmoke;
+    padding: 5px 30px 0px;
+  }
+  div.container {
+    justify-content: space-evenly;
+    background: white;
+  }
+  .card {
+    max-width: 30%;
+    padding: 0px 0px 20px;
+    margin: 0px 0px 30px;
+  }
+  .card p {
+    width: 95%;
+    margin: auto;
+  }
+  section.skills p {
+    margin: 0px 90px 0px; 
+  }
+  section.contact p {
+    margin: 10px 14.3rem; 
+  }
+  section.contact {
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  
+  header {
+    min-height: 50vh;
+  }
+  img.profile {
+    width: 35%;
+    padding-right: 80px;
+  }
+  section.skills p {
+    margin: 0px 20rem 0px; 
+  }
+  section.contact p {
+    margin: 10px 30rem; 
+  }
+}
+ 
