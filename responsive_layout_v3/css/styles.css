@@ -135,13 +135,11 @@ ul.sm-nav {
 }
 ul.sm-nav li, ul.sm-nav a {
   list-style-type: none;
-  background-color: #fff;
-  margin: 5px;
-  padding: 10px;
-  border-radius: 12px;
+  padding: 7px;
+  border-radius: 10px;
   background-color:  rgb(210, 165, 165);
   color: white;
-  font: 16px 'Raleway', sans-serif;
+  font: 12px 'Raleway', sans-serif;
 }
 
 /* For larger screens 768px-1023px
