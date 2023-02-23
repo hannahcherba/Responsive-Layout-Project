@@ -7,7 +7,7 @@
     margin: 0vh auto;
     padding: 0%;
     text-align: center;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito Sans', arial, sans-serif;
     color: rgb(88, 71, 71);
     background:white;
   }
@@ -27,12 +27,14 @@
 
 /* Section Style
 ----------------------------------- */
-
+header, .nav, .nav li:first-child, section.contact, hr,
+footer.bottom-nav-sm, ul.sm-nav   {
+  background-color: whitesmoke;
+}
 header{
   margin: 0;
   padding-top: 3.75em;
   padding-bottom: 2rem;
-  background: whitesmoke;
 }
 h1.lg-screen {
   display: none;
@@ -44,7 +46,6 @@ ul.nav {
   padding: 0px;
 }
 .nav{
-  background-color: whitesmoke;
   margin-bottom: 0;
   padding: 5px;
   list-style-type: none;
@@ -56,7 +57,6 @@ ul.nav {
   border-radius: 15px;
 }
 .nav li:first-child {
-  background-color: whitesmoke;
   margin-top: 0px;
 }
 img.profile {
@@ -109,7 +109,6 @@ section.skills {
 }
 
 section.contact {
-  background: whitesmoke;
   padding-top: 20px;
   padding-bottom: 40px;
   margin-top: 0px;
@@ -118,7 +117,6 @@ section h3 {
   padding: 3rem 0px 1rem;
 }
 hr {
-  background: whitesmoke;
   margin: 0;
 }
 footer.bottom-nav-lg {
@@ -130,24 +128,20 @@ footer.bottom-nav-sm {
   margin: 0px;
 }
 ul.sm-nav {
-  background: whitesmoke;
   padding: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-ul.sm-nav li {
+ul.sm-nav li, ul.sm-nav a {
   list-style-type: none;
   background-color: #fff;
-  margin: 5px 1em;
-  padding: 20px;
-  border-radius: 15px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 12px;
   background-color:  rgb(210, 165, 165);
   color: white;
-}
-ul.sm-nav li:first-child {
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font: 16px 'Raleway', sans-serif;
 }
 
 /* For larger screens 768px-1023px
@@ -172,7 +166,7 @@ ul.sm-nav li:first-child {
       padding: 10px;
 
     }
-    .nav li.name {
+    .nav li.name, footer.bottom-nav-sm {
       display: none;
     }
     header {
@@ -198,9 +192,6 @@ ul.sm-nav li:first-child {
     }
     section.contact p {
       margin: 10px 90px; 
-    }
-    footer.bottom-nav-sm{
-      display: none;
     }
     footer.bottom-nav-lg {
       display: contents;
@@ -253,10 +244,9 @@ ul.sm-nav li:first-child {
     padding-left: 70px;
   }
   img.profile {
-    /* max-width: 30%; */
     padding-right: 60px;
   }
-  aside {
+  aside, div.container  {
     background: white;
   }
   main {
@@ -265,7 +255,6 @@ ul.sm-nav li:first-child {
   }
   div.container {
     justify-content: space-evenly;
-    background: white;
   }
   .card {
     max-width: 30%;
