@@ -216,7 +216,7 @@ ul.sm-nav li, ul.sm-nav a {
     }
 
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
   h1.lg-screen {
     display: none;
   }
